@@ -25,7 +25,7 @@ LUTs.
 as pass transistors.
     <img src="images/2d_fpga.png" width="600"/>
 
-* Modern FPGA is becoming more heterogenous.
+* Modern FPGA is becoming more heterogenous.  
   <img src="images/modern_fpga.png" width="600"/>
 
 * The hardend resources include,
