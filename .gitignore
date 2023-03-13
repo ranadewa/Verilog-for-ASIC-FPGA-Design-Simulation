@@ -1,8 +1,13 @@
 **/*.xpr
 day_2/adders/adders.runs/*
-day_2/adders/adders.cache/*
 day_2/adders/adders.sim/*
 day_2/adders/adders.hw/adders.lpr
 day_2/adders/adders.ip_user_files/README.txt
 **/*.lpr
 **/wt/project.wpc
+*.rst
+**/impl_1/*
+**/sim_1/behav/*
+**/synth_1/*
+**/.jobs/*
+**/*.cache/*
