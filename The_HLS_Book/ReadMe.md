@@ -34,3 +34,9 @@ of arithmetic operations including multiplication, addition, multiply-accumulate
   * BRAMs are configurable random access memory modules that support different memory layouts and interfaces. For example, they can be changed to have byte, half-word, word, and double word transfers and connected to a variety of different interfaces including local on-chip buses (for talking to the programmable fabric) and processor buses (to communicate with on-chip processors).
 * High-end modern FPGAs can include four or more on-chip microprocessors (e.g., ARM cores).
     <img src="images/Embedded_fpga.png" width="600"/>
+#### Design Optimization
+##### Performance Characterization
+* Task - Fundamental atomic unit of behavior -> Function invocatino in Vivado HLS.
+* Task Latency - Time between begin and end of a task
+* Task Interval(II) - Difference between start times of two consecutive tasks.
+<img src="images/tasks.png" width="600"/>
