@@ -40,3 +40,5 @@ of arithmetic operations including multiplication, addition, multiply-accumulate
 * Task Latency - Time between begin and end of a task
 * Task Interval(II) - Difference between start times of two consecutive tasks.
 <img src="images/tasks.png" width="600"/>
+
+## Chapter 2: Finite Impulse Response (FIR) Filters 
