@@ -42,3 +42,13 @@ of arithmetic operations including multiplication, addition, multiply-accumulate
 <img src="images/tasks.png" width="600"/>
 
 ## Chapter 2: Finite Impulse Response (FIR) Filters 
+### Operation Chaining
+
+### Optimisation results
+
+| Technique | Clock(Mhz) | Latency(ns) | LUTS| FF |
+| ----------|-------|---------|-----|---|
+| Not optimized| 150 | 160| 233|212|
+| Code hoist | 160| 140| 274|143|
+| Loop Fission | 160 | 300 | 303 | 155 |
+| Loop unroling after fission| 160| 290 | 447 | 757|

@@ -30,3 +30,6 @@ day_2/adders/adders.ip_user_files/README.txt
 The_HLS_Book/examples/union/union/unionTestS1/unionTestS1_data.json
 The_HLS_Book/examples/union/union/unionTestS1/directives.tcl
 The_HLS_Book/examples/union/union/unionTestS1/script.tcl
+The_HLS_Book/examples/02_FIR_Filter/finite_impulse_response_filter/Debug/*
+The_HLS_Book/examples/02_FIR_Filter/finite_impulse_response_filter/3_ns_clock_not_optimised/3_ns_clock_not_optimised_data.json
+The_HLS_Book/examples/02_FIR_Filter/finite_impulse_response_filter/not_optimized/not_optimized_data.json
