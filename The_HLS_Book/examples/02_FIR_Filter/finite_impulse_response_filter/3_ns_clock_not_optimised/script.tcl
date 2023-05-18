@@ -4,9 +4,9 @@
 ## Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project finite_impulse_response_filter
-set_top fir_loop_unroling
-add_files fir_top.cpp
+set_top fir_loop_pipelining
 add_files fir_top.h
+add_files fir_top.cpp
 add_files -tb main.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "3_ns_clock_not_optimised" -flow_target vivado
 set_part {xcvu5p-flva2104-1-e}

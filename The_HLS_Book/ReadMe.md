@@ -52,3 +52,4 @@ of arithmetic operations including multiplication, addition, multiply-accumulate
 | Code hoist | 160| 140| 274|143|
 | Loop Fission | 160 | 300 | 303 | 155 |
 | Loop unroling after fission| 160| 290 | 447 | 757|
+| Loop pipelining after fission| 160| 290 | 447 | 757|

@@ -115,7 +115,36 @@ extern "C"  void fir_loop_unroling(data_t *y, data_t x) {
 }
 
 
+extern "C"  void fir_loop_pipelining(data_t *y, data_t x) {
+	coef_t c[N] = {53, 0, -91, 0, 313, 500, 313, 0, -91, 0, 53};
 
+	static data_t shif_reg[N];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=shif_reg
+	acc_t acc;
+	int i;
+
+	acc = 0;
+
+	Tapped_delay_line:
+#pragma HLS pipeline //factor=2
+//#pragma HLS array partition variable=shift reg complete
+	for (i = N-1; i > 0; i--)
+	{
+		shif_reg[i] = shif_reg[i-1];
+	}
+
+	shif_reg[0] = x;
+
+	Multiply_and_accumulate:
+
+#pragma HLS pipeline
+	for (i = N-1; i >= 0; i--)
+	{
+		acc += shif_reg[i] * c[i];
+	}
+
+	*y = acc;
+}
 
 
 
