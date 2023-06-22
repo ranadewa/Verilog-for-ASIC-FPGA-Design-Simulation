@@ -53,3 +53,13 @@ of arithmetic operations including multiplication, addition, multiply-accumulate
 | Loop Fission | 160 | 300 | 303 | 155 |
 | Loop unroling after fission| 160| 290 | 447 | 757|
 | Loop pipelining after fission| 160| 290 | 447 | 757|
+
+### Unrolling Loops to Improve Pipelining (UG13339)
+
+This example assumes the arrays a[i], b[i], and c[i] are mapped to block RAMs.  
+
+<img src="images/loop_unrole.png" width="600"/>
+
+* Rolled Loop: Each iteration done on separate clock cycle. Takes 4 cycles and uses one multiplier, single port BRAMS. 
+* Partially Unroled: unrole factor - 2. Requires 2 multiplires and dual port BRAMs. 
+* Unrolled Loop: All operations in one cycle. Requires 4 multipliers and needs the arrays to be partitioned. 
